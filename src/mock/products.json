@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "nome": "Flauta Transversal",
+      "preco": 999.0,
+      "imgUrl": "https://picsum.photos/id/1/200"
+    },
+    {
+      "id": 2,
+      "nome": "Violao",
+      "preco": 399.99,
+      "imgUrl": "https://picsum.photos/id/2/200"
+    },
+    {
+      "id": 3,
+      "nome": "Teclado",
+      "preco": 593.99,
+      "imgUrl": "https://picsum.photos/id/3/200"
+    },
+    {
+      "id": 4,
+      "nome": "Piano",
+      "preco": 1500,
+      "imgUrl": "https://picsum.photos/id/4/200"
+    },
+    {
+      "id": 5,
+      "nome": "Flauta Doce",
+      "preco": 34,
+      "imgUrl": "https://picsum.photos/id/5/200"
+    },
+    {
+      "id": 6,
+      "nome": "Violino",
+      "preco": 160,
+      "imgUrl": "https://picsum.photos/id/6/200"
+    },
+    {
+      "id": 7,
+      "nome": "Violoncelo",
+      "preco": 300,
+      "imgUrl": "https://picsum.photos/id/7/200"
+    },
+    {
+      "id": 8,
+      "nome": "Saxofone Alto",
+      "preco": 999.0,
+      "imgUrl": "https://picsum.photos/id/8/200"
+    },
+    {
+      "id": 9,
+      "nome": "Bateria",
+      "preco": 99.0,
+      "imgUrl": "https://picsum.photos/id/9/200"
+    },
+    {
+      "id": 10,
+      "nome": "Baixo",
+      "preco": 989.0,
+      "imgUrl": "https://picsum.photos/id/10/200"
+    },
+    {
+      "id": 11,
+      "nome": "Saxofone Tenor",
+      "preco": 542.89,
+      "imgUrl": "https://picsum.photos/id/11/200"
+    }
+  ]
+}

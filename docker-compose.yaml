@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  spotflautas-web:
+    # build: ./spotflautas-web
+    image: spotflautas-web
+    stdin_open: true
+    environment:
+      PORT: 3001
+    ports:
+      - 3001:3001
+    volumes:
+      - "./:/usr/src/app:delegated"
+      - /usr/src/app/node_modules/
+  #   depends_on:
+  #     - spotflautas-auth
+
+
+  # spotflautas-auth:
+  #   build: 
+  #     context: ./spotflautas-auth
+  #     dockerfile: Dockerfile.dev
+    
+  #   image: spotflautas-auth
+  #   environment:
+  #     PORT: 3000
+  #   ports:
+  #     - 3000:3000
