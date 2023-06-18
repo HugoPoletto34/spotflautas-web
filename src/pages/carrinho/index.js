@@ -163,6 +163,8 @@ export const Carrinho = ({ setCarrinho }) => {
         return acc + curr.precoVenda * curr.quantidade;
       else if (curr.operacao === "alugar") 
         return acc + curr.precoAluguelPorDia * curr.quantidade;
+      else
+        return 0.0;
     }, 0).toLocaleString("pt-BR", {
       style: "currency",
       currency: "BRL",
@@ -427,6 +429,8 @@ export const Carrinho = ({ setCarrinho }) => {
                               width={200}
                             />
                           </div>
+                      {product.operacao === "comprar" && (
+                        <>
                           <CardContent>
                             <p>{product.nome}</p>
                             <p>
@@ -436,6 +440,22 @@ export const Carrinho = ({ setCarrinho }) => {
                               })}
                             </p>
                           </CardContent>
+                        </>
+                      )}
+                      {product.operacao === "alugar" && (
+                        <>
+                          <CardContent>
+                            <p>{product.nome}</p>
+                            <p>
+                              {product.precoAluguelPorDia.toLocaleString("pt-BR", {
+                                style: "currency",
+                                currency: "BRL",
+                              })} por dia
+                            </p>
+                          </CardContent>
+
+                        </>
+                      )}
                           <CardActions>
                             <p style={{ margin: "auto", fontSize: "1.3rem" }}>
                               x{product.quantidade}
